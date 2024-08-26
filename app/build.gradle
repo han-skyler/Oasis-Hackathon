@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+
+    // 구글 서비스 추가
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.white_butterfly'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.white_butterfly"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "0.31.7"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.3.1"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Firebase 연결 위함
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-installations'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-firestore:24.4.4' // Cloud Firestore
+    implementation 'com.google.firebase:firebase-storage'
+
+    // Glide (오픈소스 이미지 핸들링 할 때 많이 사용)
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // Chatbot
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+
+    // 광고 배너
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'me.relex:circleindicator:2.1.6'
+
+    // Google Login
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+
+    // Kakao Login
+    implementation "com.kakao.sdk:v2-all:2.11.2" // 전체 모듈 설치, 2.11.0 버전부터 지원
+    implementation "com.kakao.sdk:v2-user:2.11.2" // 카카오 로그인
+    implementation "com.kakao.sdk:v2-talk:2.11.2" // 친구, 메시지(카카오톡)
+    implementation "com.kakao.sdk:v2-story:2.11.2" // 카카오스토리
+    implementation "com.kakao.sdk:v2-share:2.11.2" // 메시지(카카오톡 공유)
+    implementation "com.kakao.sdk:v2-navi:2.11.2" // 카카오내비
+    implementation "com.kakao.sdk:v2-friend:2.11.2" // 카카오톡 소셜 피커, 리소스 번들 파일 포함
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/libDaumMapAndroid.jar')
+}

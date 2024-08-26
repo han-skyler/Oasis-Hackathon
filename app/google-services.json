@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "488991792947",
+    "firebase_url": "https://oasis-hackathon-43a40-default-rtdb.firebaseio.com",
+    "project_id": "oasis-hackathon-43a40",
+    "storage_bucket": "oasis-hackathon-43a40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488991792947:android:bd342bf19f7ac5d1bc6846",
+        "android_client_info": {
+          "package_name": "com.example.chatbot_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488991792947-67qe35dr27u4a71n6m2vem74lekja6i7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatbot_test",
+            "certificate_hash": "57a4ba264ab1aa05b21553b46625973d6162d48a"
+          }
+        },
+        {
+          "client_id": "488991792947-vmad25h0bjnrl1sutc4morgt5lmd2fat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatbot_test",
+            "certificate_hash": "031be09010ea93abdbf6c3f578f4641ee9e6ee3c"
+          }
+        },
+        {
+          "client_id": "488991792947-7pmlv9sdig0kbncoimdskjaklhqu5pv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGXe3VdevHLNA3pJPM46Tnq14TEnwP3mY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488991792947-7pmlv9sdig0kbncoimdskjaklhqu5pv7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488991792947:android:fb590b5a4a55d90bbc6846",
+        "android_client_info": {
+          "package_name": "com.example.white_butterfly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488991792947-5roduovjgimngpc2fk98003ct0tp25uc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.white_butterfly",
+            "certificate_hash": "c33134ec2317e59446522d96a83ac952f9983fc2"
+          }
+        },
+        {
+          "client_id": "488991792947-7pmlv9sdig0kbncoimdskjaklhqu5pv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGXe3VdevHLNA3pJPM46Tnq14TEnwP3mY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488991792947-7pmlv9sdig0kbncoimdskjaklhqu5pv7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

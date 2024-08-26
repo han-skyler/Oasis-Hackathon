@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 메인 START -->
+    <!-- 인공지능 자기소개 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 메인 END -->
+
+    <!-- 상단 START -->
+    <LinearLayout
+        android:id="@+id/view_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 말동무와 대화하기 버튼 START -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_chatbot"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:layout_margin="7sp"
+            android:background="@drawable/button_round10_main">
+
+            <ImageView
+                android:id="@+id/icon_chatbot"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/icon_chatbot"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/pretendard_medium"
+                android:gravity="center"
+                android:text="말동무 로봇"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon_chatbot"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- 말동무와 대화하기 버튼 END -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:fontFamily="@font/pretendard_medium"
+            android:gravity="center_vertical"
+            android:layout_margin="7sp"
+            android:textColor="@color/black"
+            android:text="인공지능 친구들이 직접 작성한 자기소개입니다."
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        app:ci_drawable="@drawable/chatbot_count"
+        app:layout_constraintTop_toBottomOf="@+id/view_top" />
+    <!-- 상단 END -->
+
+    <!-- 하단 대화하기 버튼 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:width="1dp"
+            android:background="@drawable/button_fill"
+            android:fontFamily="@font/pretendard_regular"
+            android:text="대화하기"
+            android:textColor="@drawable/text_enable"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/icon_rock_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btn_next"
+            app:layout_constraintTop_toTopOf="@+id/btn_next" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

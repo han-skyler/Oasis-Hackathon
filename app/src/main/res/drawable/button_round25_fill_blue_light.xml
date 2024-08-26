@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:shape="rectangle">
+
+    <!-- active -->
+    <item android:state_selected="true">
+        <shape>
+            <!-- 배경 -->
+            <solid android:color="@color/active" />
+            <!-- 모서리 -->
+            <corners
+                android:bottomLeftRadius="23dp"
+                android:bottomRightRadius="23dp"
+                android:topLeftRadius="23dp"
+                android:topRightRadius="23dp" />
+        </shape>
+    </item>
+
+    <!-- default -->
+    <item android:state_selected="false">
+        <shape>
+            <!-- 배경 -->
+            <solid android:color="@color/light_blue" />
+            <!-- 모서리 -->
+            <corners
+                android:bottomLeftRadius="23dp"
+                android:bottomRightRadius="23dp"
+                android:topLeftRadius="23dp"
+                android:topRightRadius="23dp" />
+        </shape>
+    </item>
+
+</selector>

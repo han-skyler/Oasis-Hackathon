@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:shape="rectangle">
+
+    <item>
+        <shape>
+            <!-- 배경 -->
+            <solid android:color="#f9e000" />
+            <stroke
+                android:color="#f9e000"
+                android:width="1.5dp"
+                />
+            <!-- 모서리 -->
+            <corners
+                android:bottomLeftRadius="25dp"
+                android:bottomRightRadius="25dp"
+                android:topLeftRadius="25dp"
+                android:topRightRadius="25dp" />
+        </shape>
+    </item>
+
+</selector>

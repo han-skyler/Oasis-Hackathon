@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="main">@color/blue</color>
+    <color name="main_trans">#592A8FF7</color>
+    <color name="background">@color/light_blue</color>
+    <color name="background_check">#F2F5FA</color>
+
+    <color name="light_blue">#f2f5fa</color>
+    <color name="blue">#2A8FF7</color>
+    <color name="other_blue">#a0bdfd</color>
+
+    <color name="red">#FB7C73</color>
+    <color name="mint">#81CDCB</color>
+    <color name="pink">#FFB6AD</color>
+
+    <color name="more_gray">#595959</color>
+    <color name="gray">#A6A6A6</color>
+    <color name="light_gray">#D7D7D7</color>
+
+    <color name="navy">#354262</color>
+
+    <color name="speaker">#9D9D9D</color>
+
+    <color name="unable">#D7D7D7</color>
+    <color name="active">@color/main</color>
+    <color name="pressed">#1F6BB8</color>
+
+    <color name="AI">#167C80</color>
+    <color name="Human">#96B6C5</color>
+
+    <color name="back">#00ff0000</color>
+
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

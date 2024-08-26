@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- fragment -->
+    <FrameLayout
+        android:id="@+id/view_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+
+    <!-- register2 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/page_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 상단바 START -->
+        <ImageView
+            android:id="@+id/image_before"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/icon_back"
+            android:gravity="start"
+            app:layout_constraintBottom_toBottomOf="@+id/view_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/textView_logo"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/logo_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_top" />
+
+        </LinearLayout>
+        <!-- 상단바 END -->
+
+        <!-- 로고 START -->
+        <!-- 로고 END -->
+
+        <!-- 메인 START -->
+
+        <!-- 본인 -->
+        <TextView
+            android:id="@+id/textView_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:text="본인 연락처"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_top" />
+
+        <!-- 본인 핸드폰 번호 입력칸 -->
+        <LinearLayout
+            android:id="@+id/MyPhone"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_round15_stroke1_gray"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_my">
+
+            <EditText
+                android:id="@+id/editText_MyFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="010"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="25sp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_My1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:text=" - "
+                android:textSize="25sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText_MyMiddle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="0000"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="25sp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_My2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=" - "
+                android:textSize="25sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText_MyLast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="0000"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="25sp">
+
+            </EditText>
+        </LinearLayout>
+
+        <!-- 보호자 -->
+        <TextView
+            android:id="@+id/textView_guardian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:text="보호자 연락처"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MyPhone" />
+
+        <!-- 보호자 핸드폰 번호 입력칸 -->
+        <LinearLayout
+            android:id="@+id/GuardianPhone"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_round15_stroke1_gray"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_guardian">
+
+            <EditText
+                android:id="@+id/editText_GuardianFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="010"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="25sp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_Guardian1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:text=" - "
+                android:textSize="25sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText_GuardianMiddle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="0000"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="25sp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_Guardian2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=" - "
+                android:textSize="25sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText_GuardianLast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="0000"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="25sp">
+
+            </EditText>
+        </LinearLayout>
+
+        <!-- 다음 버튼 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:width="1dp"
+            android:background="@drawable/button_fill"
+            android:text="다음"
+            android:textColor="@drawable/text_enable"
+            android:textSize="30sp"
+            android:fontFamily="@font/pretendard_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- 메인 END -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
