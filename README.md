@@ -2,7 +2,8 @@
 
 <p align='center'>치매 예방 및 관리 앱, <b>흰나비</b> 프로젝트에 오신 것을 환영합니다! 🦋</p>
 <p align="center">
-  <a href="https://han-skyler.github.io/portfolio_first/pjt4.html">여기서 발표 PPT를 확인하세요!</a>
+  <a href="https://han-skyler.github.io/portfolio_first/pjt4.html">여기서 발표 PPT를 확인하세요!</a>  
+	<p align="center"><img width="700" alt="image" src="https://github.com/user-attachments/assets/21c8ac8d-eced-4752-80a1-dfe5bae1ee38" /></p>
 </p>
 
  
@@ -58,9 +59,11 @@
 <div align=center>
 	<h3>🤹‍♂️ 팀원 소개 🤹‍♂️</h3>
 	<p>✨ 함께한 멤버들 ✨</p>
+	<img width="700" alt="image" src="https://github.com/user-attachments/assets/9c36aec2-847a-4d9b-a3fc-3bfa74531748" />
 </div>
 
 <div align="center">
+	<p>🦋Contact Us🦋</p>
 	<a href="mailto:april260@naver.com">
 		<img src="https://img.shields.io/badge/지윤-40AEF0?style=flat&logo=gmail&logoColor=white" />
 	</a>
