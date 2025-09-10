@@ -1,6 +1,7 @@
 ![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=White%20Butterfly&fontAlign=50&fontAlignY=40&color=gradient)
 
 <p align='center'>치매 예방 및 관리 앱, <b>흰나비</b> 프로젝트에 오신 것을 환영합니다! 🦋</p>
+<p align='center'>프로젝트기간: 2023.08.12 ~ 2023.08.29</p>
 <p align="center">
   <a href="https://han-skyler.github.io/portfolio_first/pjt4.html">여기서 발표 PPT를 확인하세요!</a>  
 	<p align="center"><img width="700" alt="image" src="https://github.com/user-attachments/assets/21c8ac8d-eced-4752-80a1-dfe5bae1ee38" /></p>
